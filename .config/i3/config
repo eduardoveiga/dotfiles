@@ -316,6 +316,8 @@ assign [class="vlc"] $ws9
 assign [class="Slack"] $ws10
 assign [class="Skype"] $ws10
 assign [class="TelegramDesktop"] $ws10
+assign [class="discord"] $ws10
+
 
 
 ###############################################################################
@@ -328,8 +330,6 @@ exec --no-startup-id volumeicon &
 exec --no-startup-id nm-applet  &
 
 # Autostart Desktop Applications
-exec --no-startup-id /opt/firefox/firefox
+exec --no-startup-id firefox
 exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal -e sh -c "tmux"'
-exec --no-startup-id telegram
-exec --no-startuo-id telegram-desktop
-exec --no-startup-id slack
+exec --no-startup-id discord
