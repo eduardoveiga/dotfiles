@@ -298,6 +298,7 @@ assign [class="Chromium"] $ws2
 assign [class="Firefox"] $ws2
 assign [class="Transmission"] $ws2
 assign [class="Nightly"] $ws2
+assign [class="firefox"] $ws2
 
 # Emacs
 assign [class="Emacs"] $ws3
