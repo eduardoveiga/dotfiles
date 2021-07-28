@@ -21,8 +21,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (pdf-tools password-mode magit rings company-tabnine company nginx-mode zenburn-theme sane-term markdown-mode go-mode emms twittering-mode telega ##))))
+   '(elcord gist pdf-tools password-mode magit rings company-tabnine company nginx-mode zenburn-theme sane-term markdown-mode go-mode emms twittering-mode telega ##)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
