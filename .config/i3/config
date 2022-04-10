@@ -8,7 +8,6 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -325,7 +324,7 @@ assign [class="discord"] $ws10
 # Autostart Common Applications
 ###############################################################################
 
-exec --no-startup-id feh --bg-scale '/home/edu/.wallpaper/4k-blade-runner-2049-7j-1336x768.jpg'
+exec --no-startup-id feh --bg-scale '/home/edu/.wallpaper/wallpaper.jpg'
 exec --no-startup-id parcellite &
 exec --no-startup-id volumeicon &
 exec --no-startup-id nm-applet  &
