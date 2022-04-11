@@ -8,7 +8,6 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -41,7 +40,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec sakura
+bindsym $mod+Return  exec alacritty -e sh -c "tmux"
+#xec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -237,7 +237,7 @@ bindcode 232 exec xbacklight -dec 10
 bindcode 233 exec xbacklight -inc 10
 
 #browser
-bindsym $mod+b exec /opt/firefox/firefox
+bindsym $mod+b exec firefox
 
 
 # Go to last Workspace
@@ -295,7 +295,7 @@ for_window [class="^Skype"] floating disable
 
 # Web
 assign [class="Chromium"] $ws2
-assign [class="Firefox"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Transmission"] $ws2
 assign [class="Nightly"] $ws2
 
@@ -322,14 +322,13 @@ assign [class="TelegramDesktop"] $ws10
 # Autostart Common Applications
 ###############################################################################
 
-exec --no-startup-id feh --bg-scale '/home/edu/.wallpaper/4k-blade-runner-2049-7j-1336x768.jpg'
+exec --no-startup-id feh --bg-scale '/home/edu/.wallpaper/wallpaper.jpg'
 exec --no-startup-id parcellite &
 exec --no-startup-id volumeicon &
 exec --no-startup-id nm-applet  &
 
 # Autostart Desktop Applications
-exec --no-startup-id /opt/firefox/firefox
-exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal -e sh -c "tmux"'
-exec --no-startup-id telegram
+exec --no-startup-id firefox
+exec --no-startup-id i3-msg 'workspace $ws1; exec alacritty -e sh -c "tmux"'
 exec --no-startuo-id telegram-desktop
 exec --no-startup-id slack
