@@ -237,7 +237,7 @@ bindcode 232 exec xbacklight -dec 10
 bindcode 233 exec xbacklight -inc 10
 
 #browser
-bindsym $mod+b exec /opt/firefox/firefox
+bindsym $mod+b exec firefox
 
 
 # Go to last Workspace
