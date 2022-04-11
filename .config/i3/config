@@ -40,7 +40,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return  exec alacritty -e sh -c "tmux"
+#xec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -327,8 +328,7 @@ exec --no-startup-id volumeicon &
 exec --no-startup-id nm-applet  &
 
 # Autostart Desktop Applications
-exec --no-startup-id /opt/firefox/firefox
-exec --no-startup-id i3-msg 'workspace $ws1; exec i3-sensible-terminal -e sh -c "tmux"'
-exec --no-startup-id telegram
+exec --no-startup-id firefox
+exec --no-startup-id i3-msg 'workspace $ws1; exec alacritty -e sh -c "tmux"'
 exec --no-startuo-id telegram-desktop
 exec --no-startup-id slack
